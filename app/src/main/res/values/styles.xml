@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomRatingBar" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#FFCA28</item> <!-- Dolu yıldız rengi -->
+        <item name="colorControlNormal">#BDBDBD</item>    <!-- Boş yıldız rengi -->
+    </style>
+
+</resources>

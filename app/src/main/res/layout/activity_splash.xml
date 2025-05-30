@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:lottie="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightOrange"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:fontFamily="@font/pacifico"
+        android:text="YemekKutusu"
+        android:textColor="@color/orangePrimary"
+        android:textSize="48sp"
+        lottie:layout_constraintBottom_toTopOf="@+id/lottieAnim"
+        lottie:layout_constraintEnd_toEndOf="parent"
+        lottie:layout_constraintHorizontal_bias="0.5"
+        lottie:layout_constraintStart_toStartOf="parent"
+        lottie:layout_constraintTop_toTopOf="parent"
+        lottie:layout_constraintVertical_bias="0.5" />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/lottieAnim"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        lottie:layout_constraintBottom_toBottomOf="parent"
+        lottie:layout_constraintEnd_toEndOf="parent"
+        lottie:layout_constraintHorizontal_bias="0.495"
+        lottie:layout_constraintStart_toStartOf="parent"
+        lottie:layout_constraintTop_toBottomOf="@+id/textView"
+        lottie:layout_constraintVertical_bias="0.294"
+        lottie:lottie_fileName="restorant.json" />
+</androidx.constraintlayout.widget.ConstraintLayout>

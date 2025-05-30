@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightOrange"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Ürün Detayları"
+            android:textColor="@color/orangePrimary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <RatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:rating="4"
+        android:isIndicator="false"
+        android:stepSize="1"
+        android:layout_gravity="center"
+        android:layout_marginBottom="12dp"
+        android:theme="@style/CustomRatingBar"/>
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="371dp"
+        android:layout_height="253dp"
+        android:layout_marginBottom="12dp"
+        android:adjustViewBounds="true"
+        android:background="#FF8F00"
+        android:scaleType="fitCenter"
+        tools:src="@tools:sample/avatars[0]" />
+
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="₺55"
+        android:textColor="@color/orangePrimary"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:text="Izgara Somon"
+        android:textColor="@color/orangePrimary"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/decreaseBtn"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/orangePrimary"
+            android:text="-"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/quantityText"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="8dp"
+            android:background="@drawable/rounded_bg"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/increaseBtn"
+            android:layout_width="102dp"
+            android:layout_height="48dp"
+            android:backgroundTint="@color/orangePrimary"
+            android:text="+"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="#FFA000"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="25-35 dk"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="#FFA000"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="Ücretsiz Teslimat"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#FFA000"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="6dp"
+            android:text="İndirim %10"
+            android:textColor="@android:color/white"
+            android:textSize="12sp" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addToCartBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#E65100"
+        android:text="Sepete Ekle"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
