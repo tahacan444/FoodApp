@@ -53,7 +53,8 @@
                 android:gravity="top"
                 android:textColorHint="@color/black"
                 android:hint="Adres"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:textColor="@color/black" />
 
             <EditText
                 android:id="@+id/etTelefon"
@@ -64,7 +65,8 @@
                 android:hint="Telefon"
                 android:textColorHint="@color/black"
                 android:inputType="phone"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:textColor="@color/black" />
 
 
             <EditText
@@ -75,7 +77,8 @@
                 android:textColorHint="@color/black"
                 android:background="@android:drawable/edit_text"
                 android:hint="Sipariş Notu (Opsiyonel)"
-                android:padding="12dp" />
+                android:padding="12dp"
+                android:textColor="@color/black" />
 
 
             <TextView
